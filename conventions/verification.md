@@ -24,6 +24,10 @@ Only the cheap, deterministic, high-signal checks block, because a slow check ho
 
 **The suite's run time is a cost too.** Measure how long the suite takes, record it, and warn when it grows. [tests.md](tests.md#how-long-does-the-suite-take) says what to do about it.
 
+## Steps that delete, replace or rebuild stored data
+
+Count what a step that deletes, replaces or rebuilds stored data or a stored document was meant to change, before the step and after it, and look again at what depended on what the step changed, because such a step can end without an error and still have changed nothing, or more than it should.
+
 ## What the runtime layer owes you
 
 The runtime layer detects, while the product runs, what the tiers did not catch. It applies only to what runs as a service. A library, a document or a paper has none.

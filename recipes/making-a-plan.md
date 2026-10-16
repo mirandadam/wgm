@@ -23,11 +23,13 @@ Four steps, handed to the assistant session that will do the planning, in this o
    - proposed, when it is of a kind that [needs an answer](../conventions/decisions.md#what-needs-an-answer). Before the plan is approved, the requester answers it, and the answer is written beside it;
    - incidental. The incidental ones are listed together, a line each, for the requester to read, because a choice the requester would have made otherwise is cheapest to catch before it is built, and any the requester questions becomes proposed.
 
+   When the product behaves differently depending on who acts, on what, or in which state, show the requester a few concrete cases before the plan is approved. Each case is a situation, or a cell in a table of roles against operations, and the requester says what they expect in each case without being told what the plan decided. Where the answer differs from the plan, ask the requester which is right, because a decision can be written exactly as it was given and still not be what the requester meant, and a review that checks the plan against the decisions written in it cannot see that.
+
    Then review the plan with [reviewing-a-change.md](reviewing-a-change.md), which covers plans too.
 
 4. **Stop.** The requester starts a fresh assistant session for implementation, because the plan, not the conversation that made it, must be enough to build from. They give it these words:
 
-   > Read the plan, investigate the repo, and tell me if we're ready. Write each decision I give you, and where the work stands, into the plan as you go, before acting on it. Set aside any step that needs a decision you cannot find there, do the steps that do not depend on it, and ask me at the end.
+   > Read the plan, investigate the repo, and tell me if we're ready. Write each decision I give you, each step you do differently from the plan and why, each finding you decline, and where the work stands, into the plan as you go, before acting on it. Set aside any step that needs a decision you cannot find there, do the steps that do not depend on it, and ask me at the end.
 
    When the session stops, what the requester does depends on why:
    - if it asks something, the requester answers;

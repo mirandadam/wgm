@@ -11,7 +11,7 @@ This recipe is run by the session that did the work, because what it needs exist
 
 Facts, with the count or the quote behind each. An impression is not a finding. Where the session does not hold a fact, say so, and do not estimate.
 
-1. **What ran.** Each recipe, on what, how many rounds, how many investigators.
+1. **What ran.** Each recipe, on what, how many rounds, how many investigators, how long each recipe took and what it cost, where the tools report them.
 2. **What each perspective found**, counted from the reports, and how many findings did not survive verification.
 3. **What the fixes broke.** Every defect a later round found in an earlier round's fix.
 4. **What reached the tree anyway.** Every defect found after the work was called done, including what the requester corrected, quoted in their words.

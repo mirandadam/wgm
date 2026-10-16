@@ -53,7 +53,7 @@ Then, in your repository:
 
 ## Status
 
-This is the first release, v0.1. It was drafted with an assistant and reviewed with its own recipes, but I have not yet read every file line by line, so its rules may change until 1.0, as I adopt each file and as running the recipes teaches something. Its use for texts that are the product is the least tried. If something here is wrong or unclear, report it as an issue on this repository.
+This is the second release, v0.2. It was drafted with an assistant and reviewed with its own recipes, but I have not yet read every file line by line, so its rules may change until 1.0, as I adopt each file and as running the recipes teaches something. Its use for texts that are the product is the least tried. If something here is wrong or unclear, report it as an issue on this repository.
 
 ## License
 

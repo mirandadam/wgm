@@ -1,6 +1,6 @@
 ---
 name: reading-it-cold
-description: "Use when the requester opens with something vague ('review this', 'tell me what you think') or asks whether the repository still holds together, and on a change after reviewing-a-change's rounds. One reader reads the whole, with no perspective and no history. It reports and changes nothing."
+description: "Use when the requester opens with something vague ('review this', 'tell me what you think') or asks whether the repository still holds together, on a change after reviewing-a-change's rounds, and, where `WGM.md` lists it as a standing review at a release, on everything a release ships, before the release. One reader reads the whole, with no perspective and no history. It reports and changes nothing."
 ---
 
 # Reading it cold
@@ -23,6 +23,10 @@ The same reader and the same four steps, with the change in place of the tree. I
 - **Goes in**: the diff, its commit messages, and the files it touches, read whole rather than by hunk. Also the plan, whole, with the corrections and decisions the rounds put in it, because what it says was built is a claim, not history, and a claim is what the reader checks. A change with no plan carries instead the requester's decisions it executes, copied from where they are written.
 - **Stays out**: the backlog and the rounds' reports, for the same reason.
 - **After**: a reader holding the plan may weigh its word over the code's where the two differ, but checking the details, as "Take the ranking, check the details" says, catches the difference.
+
+## Before a release
+
+Where `WGM.md` lists it as a standing review at a release (see [conventions/verification.md](../conventions/verification.md)), run it once more before a release, on everything the release ships rather than the change, because a review of a change reads only what changed, and a trap in text no change touched reaches the release unread. This is the one cold read whose brief names what to rank, in place of step 1's "no checklist": contradictions between files, claims that are false, and sentences that would do harm if followed to the letter, ranked by harm, because only those change the decision to release. Whatever else it reports goes to the backlog.
 
 ## When not to
 
