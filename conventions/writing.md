@@ -1,10 +1,10 @@
 # Writing
 
-This file says how to write what other people read: commit messages, merge request descriptions, issues and the comments on them, formal communications, messages to whoever decides, reports and documentation, and texts that are themselves the product, such as a presentation. These rules were chosen by comparing pairs of texts blind, as [recipes/choosing-between-versions.md](../recipes/choosing-between-versions.md) describes, and they change the same way. Rules for a language go in a file beside this one, such as [writing-pt-br.md](writing-pt-br.md), and apply to the texts written in that language.
+This file says how to write what other people read: commit messages, merge request descriptions, issues and the comments on them, formal communications, messages to whoever decides, reports and documentation, and texts that are themselves the product, such as a presentation. Rules for a language go in a file beside this one, such as [writing-pt-br.md](writing-pt-br.md), and apply to the texts written in that language.
 
 ## Who reads each text
 
-- **Merge request description**: the reviewer, who decides from the description alone whether to open the code. The reviewer needs what was wrong and what changes, not measurements or the story of the investigation.
+- **Merge request description**: the reviewer, who decides from the description alone whether to open the code. The reviewer needs what was wrong and what changes, with any measurement a convention asks for, not the story of the investigation.
 - **Commit message**: a developer who finds the commit in the log months later. The developer needs the problem and the change, because the diff shows the rest. The title says what changed, literally, without metaphor.
 - **Issue**: whoever will fix it or decide when. They need the symptom as the user sees it, the cause if it is known, and what is proposed. Code details go in only where they point to the exact place.
 - **Comment on an issue**: whoever follows the issue and reads the comment without rereading the thread. The first sentence gives the verdict in the word that reader is looking for, such as "approved", "not approved", "decided", "fixed" or "does not reproduce". The rest of the comment supports it.
@@ -27,12 +27,12 @@ This file says how to write what other people read: commit messages, merge reque
 
 ## Rules that were tried and dropped
 
-Do not add these back without comparing again:
+These were tried and are not rules, each for its reason:
 
 - "One idea per sentence" and "explain every term the reader may not know" made every text longer without making it clearer.
 - "Effect before mechanism" produced vague openings, the kind "Open with the concrete fact" forbids.
 - "No internal names" produced roundabout phrasing, and "say what the reviewer should check" produced a stock sentence at the end of every description.
-- "A file opens with what it lets its reader do" lost two of three comparisons. The opening that named concrete things won each time, whether or not it began "This file says", so the rule's opening won only where the other opened with an abstraction, which "Open with the concrete fact" already forbids.
-- "A pronoun refers to something named in the same sentence or the one before" won one comparison and lost the other, where it broke list items that complete the sentence opening the list.
-- Giving each rule of "How to write" a name, so that a review could cite it, made no difference the reviews could show: in two texts with 28 seeded defects between them, each text reviewed twice under each version, the reviews made 55 of the 56 possible finds with the names and 54 without. The one comparison of texts written under it went, tentatively, to the version without names.
-- A strict word limit, with an instruction to count before answering, shortened the texts only slightly and broke the connections between sentences.
+- "A file opens with what it lets its reader do" did no better than an opening that names concrete things, which "Open with the concrete fact" already asks for.
+- "A pronoun refers to something named in the same sentence or the one before" broke list items that complete the sentence opening the list.
+- Giving each rule of "How to write" a name, so that a review could cite it, made no difference a review could show.
+- A strict word limit shortened texts only slightly and broke the connections between sentences.

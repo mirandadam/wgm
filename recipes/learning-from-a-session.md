@@ -1,33 +1,12 @@
 ---
 name: learning-from-a-session
-description: "Use when the requester asks, at the end of a session that ran recipes, what to learn from it: 'did the recipes work', 'what should change in the recipes'. The session that did the work runs it, with its own memory of the work, before the session ends. It produces proposals for the recipes, the conventions or the standard, and changes nothing."
+description: "Use when someone asks what to learn from a session, and offer it at the end of a session that ran into something the project's own files should have said. The session that did the work runs it. It proposes changes to the project's README, agent instructions and tools, and changes nothing until they are accepted."
 ---
 
 # Learning from a session
 
-This recipe is run by the session that did the work, because what it needs exists only in the session's memory, and the memory is gone when the session ends.
+This recipe is run by the session that did the work, because what it needs exists only in the session's memory, which is gone when the session ends.
 
-## What to gather
+**Gather** each moment where the project's own files or tools cost the session something, with the fact behind it: an instruction missing, wrong or hard to find in the README, the agent instructions (such as `AGENTS.md` or `CLAUDE.md`) or `WGM.md`; a command, hook, permission or script that failed or was missing; a correction whoever asked had to make, in their words. Where the session does not hold a fact, say so rather than estimate.
 
-Facts, with the count or the quote behind each. An impression is not a finding. Where the session does not hold a fact, say so, and do not estimate.
-
-1. **What ran.** Each recipe, on what, how many rounds, how many investigators, how long each recipe took and what it cost, where the tools report them.
-2. **What each perspective found**, counted from the reports, and how many findings did not survive verification.
-3. **What the fixes broke.** Every defect a later round found in an earlier round's fix.
-4. **What reached the tree anyway.** Every defect found after the work was called done, including what the requester corrected, quoted in their words.
-5. **What was put to the requester**: each question, when it was asked, what was decided, and what the work did in the meantime.
-6. **Which of the repository's rules the work broke**, the rule quoted and the place named, including any rule the work itself added.
-
-## What to ask
-
-- For each rule that was followed: did it earn its cost?
-- For each defect the fixes broke or that reached the tree anyway: which rule would have caught it, and is that rule missing, misplaced, or worded so that it was not followed?
-- For each question put to the requester: was it one of the cases "What the recipes share" in [README.md](README.md) sets aside, and was it asked before the work or at its end rather than in the middle?
-- For each rule the work broke: which round or rule should have caught it, and why did it not?
-
-## What comes out
-
-- **Proposals**, each a change to one recipe, convention or the standard, with the fact from the gathering beside it. The recipe does not make the change. Instead, a proposal the requester accepts becomes an ordinary change, made and reviewed with [reviewing-a-change.md](reviewing-a-change.md) in whatever session makes it. A proposal made at the end of a session is as likely to be wrong as a fix made between rounds. Where wgm is a copy the repository uses and does not write, a proposal for it that the requester accepts is given to the requester to report on wgm instead, as "What the recipes share" in [README.md](README.md) says.
-- **Decisions** the proposals need, put to the requester as questions.
-
-Nothing else.
+**Produce** proposals, each a change to one of those files or to the project's tools, with the fact beside it and the passage shown in place. Nothing changes until whoever asked accepts a proposal. A proposal for wgm itself is reported as [CONTRIBUTING.md](../CONTRIBUTING.md) says.

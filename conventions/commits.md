@@ -1,6 +1,6 @@
 # Commit messages
 
-There are two conventions, for two kinds of repository. A repository follows the one `WGM.md` chooses, or else the one its history shows. `WGM.md` chooses where the history does not show one, as in a new repository or a mixed history. How the message itself is written is in [writing.md](writing.md).
+There are two conventions, for two kinds of repository. A repository follows the one `WGM.md` chooses, or else the one its history shows, or else Unprefixed. How the message itself is written is in [writing.md](writing.md).
 
 ## Unprefixed
 
@@ -18,4 +18,4 @@ For a repository with several maintainers and rotating contributors, where the l
 
 ## Mechanical commits
 
-Whichever convention you adopt, record bulk formatter sweeps and mass renames in `.git-blame-ignore-revs` (one line per commit hash, with a comment naming the sweep), so `git blame` can skip them once `blame.ignoreRevsFile` is set, which is per-clone.
+Where people use `git blame`, record bulk formatter sweeps and mass renames in `.git-blame-ignore-revs` (one line per commit hash, with a comment naming the sweep), so `git blame` can skip them once `blame.ignoreRevsFile` is set, which is per-clone.
